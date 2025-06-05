@@ -55,7 +55,24 @@
     vertical-align: middle;
 }
 
+.hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 20px;
+}
+
+.hamburger span {
+    display: none;
+    width: 36px;
+    height: 4px;
+    background-color: #5e0c04;
+    border-radius: 2px;
+}
+
 .social-links {
+    display: block;
     margin-left: auto;
     display: flex;
     align-items: center;
@@ -631,10 +648,18 @@ footer p {
     }
 
     .social-links {
-        margin-right: 2px !important;
-        display: flex;
-        align-items: center;
-        gap: 10px;
+        display: none;
+    }
+
+    .hamburger {
+
+        margin-left: 6rem !important;
+    }
+
+    .hamburger span {
+        width: 28px;
+        height: 3px;
+        display: block;
     }
 }
 
